@@ -1,3 +1,4 @@
+requests
 rope
 autopep8
 strawberry-graphql[debug-server]
