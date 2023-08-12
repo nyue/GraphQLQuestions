@@ -1,5 +1,4 @@
 requests
 rope
 autopep8
-strawberry-graphql[debug-server]
 strawberry-graphql[fastapi]
