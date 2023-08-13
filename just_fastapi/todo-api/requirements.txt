@@ -1,0 +1,7 @@
+rope
+autopep8
+fastapi
+graphene
+graphene-sqlalchemy
+pydantic
+sqlalchemy
