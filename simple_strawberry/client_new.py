@@ -24,12 +24,16 @@ mutation {
 
 delete_body = """
 mutation {
-  deleteBook(title: "The Little Prince", author: "Antoine de Saint-Exupéry") {
-    title
-  }
+  deleteBook(title: "The Little Prince", author: "Antoine de Saint-Exupéry")
 }
 """
 
+query_body = """
+{
+  hello
+}
+"""
 
+action(body=query_body)
 action(body=add_body)
 action(body=delete_body)
