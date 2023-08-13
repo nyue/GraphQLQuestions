@@ -1,6 +1,6 @@
 from strawberry import ID
 from . import schemas
-from typing import List, Union
+from typing import List
 
 
 class QueryResolver:
@@ -11,7 +11,7 @@ class QueryResolver:
         pass
 
     @staticmethod
-    def get_task(task_id: ID) -> Union[schemas.Task,  None]:
+    def get_task(task_id: ID) -> (schemas.Task | None):
         # TODO: Connect to the data layer
         pass
 
@@ -23,7 +23,7 @@ class MutationResolver:
         pass
 
     @staticmethod
-    def update_task(task_id: ID, task: any) -> Union[schemas.Task, None]:
+    def update_task(task_id: ID, task: any) -> (schemas.Task | None):
         # TODO: update the task type
         # TODO: Connect to the data layer
         pass
