@@ -1,0 +1,10 @@
+*~
+*.log
+*.zip
+*.gv
+*.gml
+*.out
+*.code-workspace
+**/dev_venv
+**/html
+
