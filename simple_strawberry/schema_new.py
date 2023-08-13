@@ -30,5 +30,11 @@ class Mutation:
 
         return True
 
+    @strawberry.mutation
+    def update_book(self, title: str, author: str) -> bool:
+        print(f"Updating {title} by {author}")
+
+        return True
+
 
 schema = strawberry.Schema(query=Query, mutation=Mutation)

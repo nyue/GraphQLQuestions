@@ -28,6 +28,12 @@ mutation {
 }
 """
 
+update_body = """
+mutation {
+  updateBook(title: "The Little Prince", author: "Antoine de Saint-Exupéry")
+}
+"""
+
 query_body = """
 {
   hello
@@ -37,3 +43,4 @@ query_body = """
 action(body=query_body)
 action(body=add_body)
 action(body=delete_body)
+action(body=update_body)
