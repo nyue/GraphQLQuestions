@@ -35,7 +35,7 @@ mutation {
 """
 
 query_body = """
-{
+query {
   hello
 }
 """
