@@ -24,5 +24,11 @@ class Mutation:
 
         return Book(title=title, author=author)
 
+    @strawberry.mutation
+    def delete_book(self, title: str, author: str) -> bool:
+        print(f"Deleting {title} by {author}")
+
+        return True
+
 
 schema = strawberry.Schema(query=Query, mutation=Mutation)

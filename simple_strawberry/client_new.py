@@ -14,7 +14,7 @@ def action(body: str, url: str = "http://localhost:8000/graphql"):
         print("response : ", response.content)
 
 
-mutation_body = """
+add_body = """
 mutation {
   addBook(title: "The Little Prince", author: "Antoine de Saint-Exupéry") {
     title
@@ -22,5 +22,14 @@ mutation {
 }
 """
 
+delete_body = """
+mutation {
+  deleteBook(title: "The Little Prince", author: "Antoine de Saint-Exupéry") {
+    title
+  }
+}
+"""
 
-action(body=mutation_body)
+
+action(body=add_body)
+action(body=delete_body)
