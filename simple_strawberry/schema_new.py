@@ -15,6 +15,10 @@ class Query:
     def hello() -> str:
         return "world"
 
+    @strawberry.field
+    def hello(name:str) -> str:
+        return f'hello with name = "{name}"'
+
 
 @strawberry.type
 class Mutation:
