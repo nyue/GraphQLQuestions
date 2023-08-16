@@ -1,4 +1,5 @@
 *~
+.DS_Store
 *.log
 *.zip
 *.gv
@@ -7,4 +8,4 @@
 *.code-workspace
 **/dev_venv
 **/html
-
+**/__pycache__

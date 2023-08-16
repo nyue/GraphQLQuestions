@@ -40,6 +40,13 @@ query {
 }
 """
 
+query_with_args_body = """
+query {
+  hello(name: "Nicholas")
+}
+"""
+
+action(body=query_with_args_body)
 action(body=query_body)
 action(body=add_body)
 action(body=delete_body)
